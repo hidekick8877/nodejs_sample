@@ -33,13 +33,13 @@ var request = function(req, res) {
 				console.log('file err:', err);
 				res.writeHead("500");
 				res.end();
-        	}
-        	else
-        	{
-        		res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'});
-        		res.end(content);
-        	}
-    	});
+			}
+			else
+			{
+				res.writeHead(200, {'Content-Type':'text/html; charset=utf-8'});
+				res.end(content);
+			}
+		});
 	}
 	// method test
 	else if ("/method" === parsedUrl.pathname)
@@ -79,18 +79,18 @@ var request = function(req, res) {
 	{
 		// mysql connection obj
 		var mysql_conn = mysql.createConnection({
-			host     : 'localhost', 	// hostname
-			user     : 'root',      	// user name
+			host	 : 'localhost', 	// hostname
+			user	 : 'root',	  	// user name
 			password : '',  			// password
 			database : 'test01'		// DB name
 		});
 		/*
 		mysql> desc test;
 		+-------+----------------+-------+------+----------+-------+
-		| Field | Type        | Null | Key | Default | Extra |
+		| Field | Type		| Null | Key | Default | Extra |
 		+-------+----------------+-------+------+----------+-------+
-		| id    | int(11)     | YES  |     | NULL    |       |
-		| name  | varchar(64) | YES  |     | NULL    |       |
+		| id	| int(11)	 | YES  |	 | NULL	|	   |
+		| name  | varchar(64) | YES  |	 | NULL	|	   |
 		+-------+----------------+-------+------+----------+-------+
 		*/
 
