@@ -1,4 +1,4 @@
-#node.js Ssample Server
+#node.js Sample Server
 
 ## overview
 * This is sample of node.js server.
