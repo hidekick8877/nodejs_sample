@@ -161,35 +161,3 @@ server.on("request", request);
 // start server listen
 server.listen(setting.PORT, setting.IP, setting.startServer);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* url.parseを使用すると以下のようなデータが帰ってくる
-	{
-	protocol: 'http:',
-	slas	hes: true,
-	host: '192.168.1.202:1337',
-	port: '1337',
-	hostname: '192.168.1.202',
-	href: 'http://192.168.1.202:1337/foo/test?bar=value',
-	search: '?bar=value',
-	query: 'bar=value',
-	pathname: '/foo/test',
-	path: '/foo/test?bar=value'
-	}
-	url.parse(req.url); と記述しても良い
-	url.parse(req.url, true); と記述するとqueryがオブジェクトになるので使いやすい
-	*/
